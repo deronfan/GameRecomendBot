@@ -65,13 +65,13 @@ public class Main
                 System.out.println(useless);
         }
         Scanner in = new Scanner (System.in);//Creates scanner object.
-        System.out.println("Hey, I am GameBot and I'll help you decide what video game you should play using a quiz. If you want to end my existence, just type \"end\". To begin, do you prefer single player games or multiplayer games?");
+        System.out.println("Hey, I am GameBot and I'll help you decide what video game you should play using a quiz. If you want to end my existence, just type \"quit\". To begin, do you prefer single player games or multiplayer games?");
         while(alive){
                 while(location == 0){
                         String[] former = {"multi", "friends", "together", "with"};
                         String[] latter = {"single", "alone", "myself", "by"};
                         String userResp = in.nextLine(); //in.nextLine() uses the scanner object to get the user's responnse as a String
-                        if(userResp.toLowerCase().contains("end")){
+                        if(userResp.toLowerCase().contains("quit")){
                                 stop();
                         }
                         else if(checkFor(former, userResp)){
@@ -92,7 +92,7 @@ public class Main
                                 String[] latter = {"pvp", "against", "attack"};
                                 System.out.println("Do you like playing with or against your friends?");
                                 String userResp = in.nextLine();
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(former, userResp)){
@@ -113,7 +113,7 @@ public class Main
                                 String[] latter = {"based", "turn", "slow"};
                                 System.out.println("Are you more into real time games or turn based?");
                                 String userResp = in.nextLine();
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(former, userResp)){
@@ -135,7 +135,7 @@ public class Main
                                 String[] latter = {"kill", "other", "team", "against", "destroy", "terminate", "murder", "assassinate"};
                                 System.out.println("Go you like making things with your friends or killing other teams?");
                                 String userResp = in.nextLine();
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(former, userResp)){
@@ -155,7 +155,7 @@ public class Main
                                 String[] latter = {"kick", "punch", "fight"};
                                 System.out.println("Do you like shooter games or fighting games more?");
                                 String userResp = in.nextLine();
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(former, userResp)){
@@ -175,7 +175,7 @@ public class Main
                                 String[] latter = {"puzzle", "solve", "work"};
                                 System.out.println("Are you a fan of strategy games or puzzle games?");
                                 String userResp = in.nextLine();
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(former, userResp)){
@@ -196,7 +196,7 @@ public class Main
                                 String[] third = {"guns", "fighting", "gun", "shoot",  "bullet"};
                                 System.out.println("What type of action games do you like: platformer, adventure, or shooter?");
                                 String userResp = in.nextLine();
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(former, userResp)){
@@ -263,7 +263,7 @@ public class Main
                                 String[] game3 = {"mine", "craft", "mc"};
                                 String[] game4 = {"don't", "dont", "starve", "do"};
                                 String[] game5 = {"terra"};
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(game1, userResp)){
@@ -292,7 +292,7 @@ public class Main
                                 String[] game3 = {"sea", "thieves", "thief"};
                                 String[] game4 = {"apex", "legends"};
                                 String[] game5 = {"rainbow", "6", "six", "siege"};
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(game1, userResp)){
@@ -321,7 +321,7 @@ public class Main
                                 String[] game3 = {"valor"};
                                 String[] game4 = {"battle", "field", "five", "5"};
                                 String[] game5 = {"cod", "call", "duty", "modern", "warfare"};
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(game1, userResp)){
@@ -350,7 +350,7 @@ public class Main
                                 String[] game3 = {"injustice", "two"};
                                 String[] game4 = {"brawl", "hala"};
                                 String[] game5 = {"six", "6", "street", "fighter"};
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(game1, userResp)){
@@ -379,7 +379,7 @@ public class Main
                                 String[] game3 = {"injustice", "two"};
                                 String[] game4 = {"brawl", "hala"};
                                 String[] game5 = {"six", "6", "street", "fighter"};
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(game1, userResp)){
@@ -408,7 +408,7 @@ public class Main
                                 String[] game3 = {"earth", "bound", "mother"};
                                 String[] game4 = {"under", "tale"};
                                 String[] game5 = {"fire", "emblem"};
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(game1, userResp)){
@@ -437,7 +437,7 @@ public class Main
                                 String[] game3 = {"baba", "you"};
                                 String[] game4 = {"liminal", "super"};
                                 String[] game5 = {"snipper", "clip"};
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(game1, userResp)){
@@ -465,7 +465,7 @@ public class Main
                                 String[] game3 = {"mario", "wonder"};
                                 String[] game4 = {"edge", "mirror"};
                                 String[] game5 = {"super", "meat", "boy"};
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(game1, userResp)){
@@ -493,7 +493,7 @@ public class Main
                                 String[] game3 = {"red", "dead", "redemption"};
                                 String[] game4 = {"zelda", "legend", "tear", "kingdom", "totk"};
                                 String[] game5 = {"god", "war"};
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(game1, userResp)){
@@ -521,7 +521,7 @@ public class Main
                                 String[] game3 = {"space", "marines", "war", "hammer", "40"};
                                 String[] game4 = {"cyber", "punk", "2077"};
                                 String[] game5 = {"titan", "fall", "tf"};
-                                if(userResp.toLowerCase().contains("end")){
+                                if(userResp.toLowerCase().contains("quit")){
                                         stop();
                                 }
                                 else if(checkFor(game1, userResp)){
