@@ -566,6 +566,7 @@ public class Main
          {
                 System.out.println(goodBye[(int)(Math.random()*11)]);
                 alive = false;
+                System.exit(0);
          }
          public static boolean checkFor(String[] words, String check)
          {
